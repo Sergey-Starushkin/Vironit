@@ -78,7 +78,7 @@ After completing the workout, you can watch the beautiful animation.
 
 By going to the settings section you can log out of your account or read the Terms of use and privacy policy.
 
-![Image alt](https://firebasestorage.googleapis.com/v0/b/dymdiary-fa50e.appspot.com/o/present%2F15.png?alt=media&token=4ede1b14-dc1a-4dbd-9aeb-1b3261ef2a99)
+![Image alt](https://firebasestorage.googleapis.com/v0/b/dymdiary-fa50e.appspot.com/o/present%2F16.png?alt=media&token=c30e8541-b591-4b70-bef3-4c56017dc841)
 
 Video of using the application.
 
