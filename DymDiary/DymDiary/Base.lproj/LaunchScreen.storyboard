@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Iz-Zf-i5V">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="prj-m0-qzY">
+            <objects>
+                <viewController id="2Iz-Zf-i5V" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PHh-jk-M8w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icLogo" translatesAutoresizingMaskIntoConstraints="NO" id="bGh-vM-FIH">
+                                <rect key="frame" x="112.66666666666669" y="336" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bGh-vM-FIH" secondAttribute="height" multiplier="1:1" priority="999" id="ygq-Lt-5rO"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9xP-47-nt3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bGh-vM-FIH" firstAttribute="centerX" secondItem="9xP-47-nt3" secondAttribute="centerX" id="Vke-Qj-Eij"/>
+                            <constraint firstItem="bGh-vM-FIH" firstAttribute="width" secondItem="PHh-jk-M8w" secondAttribute="width" multiplier="1/2.5" priority="999" id="WlI-Tk-bJX"/>
+                            <constraint firstItem="bGh-vM-FIH" firstAttribute="centerY" secondItem="9xP-47-nt3" secondAttribute="centerY" id="j7Q-iu-4NT"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KJa-e5-dM7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icLogo" width="113" height="103"/>
+    </resources>
+</document>

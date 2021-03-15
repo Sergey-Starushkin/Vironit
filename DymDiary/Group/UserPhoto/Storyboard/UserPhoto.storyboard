@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u79-kE-yqv">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFCompactRounded-Medium.otf">
+            <string>SFCompactRounded-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--User Photo View Controller-->
+        <scene sceneID="kIk-ag-7Pf">
+            <objects>
+                <viewController id="u79-kE-yqv" customClass="UserPhotoViewController" customModule="DymDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QN8-ct-nIy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload a photo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3c-B9-RdG">
+                                <rect key="frame" x="54.666666666666657" y="44" width="266" height="48"/>
+                                <fontDescription key="fontDescription" name="SFCompactRounded-Medium" family="SF Compact Rounded" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BRu-6S-owS">
+                                <rect key="frame" x="37.666666666666657" y="137" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="GdY-42-Tfo"/>
+                                    <constraint firstAttribute="width" constant="300" id="zle-Ya-wpZ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1C-SY-HE9">
+                                <rect key="frame" x="155" y="462" width="65" height="42"/>
+                                <fontDescription key="fontDescription" name="SFCompactRounded-Medium" family="SF Compact Rounded" pointSize="25"/>
+                                <state key="normal" title="Photo"/>
+                                <connections>
+                                    <action selector="clickPhotoButton:" destination="u79-kE-yqv" eventType="touchUpInside" id="aBW-jP-YoB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIq-Re-f3o">
+                                <rect key="frame" x="30" y="708" width="315" height="50"/>
+                                <color key="backgroundColor" red="0.89238047600000003" green="0.26256740090000003" blue="0.4862833023" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CoX-ac-av5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFCompactRounded-Medium" family="SF Compact Rounded" pointSize="17"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.95691555740000001" green="0.9567347169" blue="0.96470755340000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickCcontinueButton:" destination="u79-kE-yqv" eventType="touchUpInside" id="o3J-2c-TfF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="K8F-xa-2JY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x1C-SY-HE9" firstAttribute="centerX" secondItem="QN8-ct-nIy" secondAttribute="centerX" id="14y-8Q-cPT"/>
+                            <constraint firstItem="n3c-B9-RdG" firstAttribute="centerX" secondItem="QN8-ct-nIy" secondAttribute="centerX" id="7J5-1a-vBG"/>
+                            <constraint firstItem="BRu-6S-owS" firstAttribute="centerX" secondItem="n3c-B9-RdG" secondAttribute="centerX" id="DBh-fJ-EbB"/>
+                            <constraint firstItem="K8F-xa-2JY" firstAttribute="bottom" secondItem="zIq-Re-f3o" secondAttribute="bottom" constant="20" id="IAc-cP-2Cq"/>
+                            <constraint firstItem="K8F-xa-2JY" firstAttribute="trailing" secondItem="zIq-Re-f3o" secondAttribute="trailing" constant="30" id="MuH-FJ-cz3"/>
+                            <constraint firstItem="n3c-B9-RdG" firstAttribute="top" secondItem="K8F-xa-2JY" secondAttribute="top" id="Oq3-xj-fGc"/>
+                            <constraint firstItem="BRu-6S-owS" firstAttribute="top" secondItem="n3c-B9-RdG" secondAttribute="bottom" constant="45" id="VP6-2O-Nyr"/>
+                            <constraint firstItem="zIq-Re-f3o" firstAttribute="leading" secondItem="K8F-xa-2JY" secondAttribute="leading" constant="30" id="hbU-dE-WCy"/>
+                            <constraint firstItem="x1C-SY-HE9" firstAttribute="top" secondItem="BRu-6S-owS" secondAttribute="bottom" constant="25" id="iDE-7U-Txu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="continueButton" destination="zIq-Re-f3o" id="Wnt-fn-Lp7"/>
+                        <outlet property="userPhotoImageView" destination="BRu-6S-owS" id="mmR-lK-eNG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qTz-4J-iGi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219" y="110"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

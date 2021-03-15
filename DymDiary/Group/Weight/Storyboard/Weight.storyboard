@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0X5-7i-RMv">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFCompactRounded-Medium.otf">
+            <string>SFCompactRounded-Medium</string>
+        </array>
+        <array key="SFCompactRounded-Regular.otf">
+            <string>SFCompactRounded-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Weight View Controller-->
+        <scene sceneID="fDU-hc-0UW">
+            <objects>
+                <viewController id="0X5-7i-RMv" customClass="WeightViewController" customModule="DymDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sqU-qe-9kB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your weight?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ams-hy-YX5">
+                                <rect key="frame" x="7" y="64" width="361.33333333333331" height="48"/>
+                                <fontDescription key="fontDescription" name="SFCompactRounded-Medium" family="SF Compact Rounded" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select units" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guM-B0-W2Q">
+                                <rect key="frame" x="137" y="120" width="101" height="24"/>
+                                <fontDescription key="fontDescription" name="SFCompactRounded-Regular" family="SF Compact Rounded" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrJ-6h-YMm">
+                                <rect key="frame" x="30" y="708" width="315" height="50"/>
+                                <color key="backgroundColor" red="0.89238047600000003" green="0.26256740090000003" blue="0.4862833023" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uKX-7J-8a8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFCompactRounded-Medium" family="SF Compact Rounded" pointSize="25"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Continue"/>
+                                <connections>
+                                    <action selector="clickContinueButton:" destination="0X5-7i-RMv" eventType="touchUpInside" id="8Bu-8S-V4m"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ccx-fa-S1g">
+                                <rect key="frame" x="30" y="219" width="315" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G6s-GD-TBQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="277" height="50"/>
+                                        <color key="backgroundColor" red="0.95691555740000001" green="0.9567347169" blue="0.96470755340000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" red="0.89238047600000003" green="0.26256740090000003" blue="0.4862833023" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="SFCompactRounded-Regular" family="SF Compact Rounded" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMD-Jk-Tpv">
+                                        <rect key="frame" x="285" y="0.0" width="30" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="ULV-o2-Zk1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFCompactRounded-Regular" family="SF Compact Rounded" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95691555740000001" green="0.9567347169" blue="0.96470755340000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JG6-38-D2e"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gab-x9-pUk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Gab-x9-pUk" firstAttribute="trailing" secondItem="YrJ-6h-YMm" secondAttribute="trailing" constant="30" id="3A0-Y8-Rhj"/>
+                            <constraint firstItem="Ams-hy-YX5" firstAttribute="centerX" secondItem="sqU-qe-9kB" secondAttribute="centerX" id="80Q-pc-I3q"/>
+                            <constraint firstItem="guM-B0-W2Q" firstAttribute="centerX" secondItem="sqU-qe-9kB" secondAttribute="centerX" id="ANH-TM-KUl"/>
+                            <constraint firstItem="Gab-x9-pUk" firstAttribute="bottom" secondItem="YrJ-6h-YMm" secondAttribute="bottom" constant="20" id="HcI-HE-5Gl"/>
+                            <constraint firstItem="Ams-hy-YX5" firstAttribute="top" secondItem="Gab-x9-pUk" secondAttribute="top" constant="20" id="IHf-49-6cE"/>
+                            <constraint firstItem="Gab-x9-pUk" firstAttribute="trailing" secondItem="ccx-fa-S1g" secondAttribute="trailing" constant="30" id="IXc-9h-Rb1"/>
+                            <constraint firstItem="ccx-fa-S1g" firstAttribute="leading" secondItem="Gab-x9-pUk" secondAttribute="leading" constant="30" id="PhY-Jk-wXL"/>
+                            <constraint firstItem="YrJ-6h-YMm" firstAttribute="leading" secondItem="Gab-x9-pUk" secondAttribute="leading" constant="30" id="SaI-By-8XX"/>
+                            <constraint firstItem="guM-B0-W2Q" firstAttribute="top" secondItem="Ams-hy-YX5" secondAttribute="bottom" constant="8" symbolic="YES" id="nd4-7V-k26"/>
+                            <constraint firstItem="ccx-fa-S1g" firstAttribute="top" secondItem="guM-B0-W2Q" secondAttribute="bottom" constant="75" id="oEL-IC-VQQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="continueButton" destination="YrJ-6h-YMm" id="hFF-UD-Ijf"/>
+                        <outlet property="userWeightStackView" destination="ccx-fa-S1g" id="NuZ-vZ-mA2"/>
+                        <outlet property="userWeightTextField" destination="G6s-GD-TBQ" id="Tfo-wv-RJ2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nlk-Bz-Ldq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340.57971014492756" y="53.571428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFCompactRounded-Bold.otf">
+            <string>SFCompactRounded-Bold</string>
+        </array>
+        <array key="SFCompactRounded-Medium.otf">
+            <string>SFCompactRounded-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="WorkoutsTableViewCell" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="WorkoutsTableViewCell" customModule="DymDiary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJl-OJ-VZo">
+                        <rect key="frame" x="8" y="4" width="304" height="104"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="ifl-lR-9og">
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="104"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LFR-1g-key">
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="104"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13 Exercises" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dX-lJ-I7d">
+                                <rect key="frame" x="10" y="43" width="80.5" height="18"/>
+                                <fontDescription key="fontDescription" name="SFCompactRounded-Medium" family="SF Compact Rounded" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DkZ-eM-Fuj">
+                                <rect key="frame" x="281.5" y="44" width="12.5" height="16.5"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Situps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnM-6M-VTz">
+                                <rect key="frame" x="10" y="14" width="58.5" height="24"/>
+                                <fontDescription key="fontDescription" name="SFCompactRounded-Bold" family="SF Compact Rounded" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bnM-6M-VTz" firstAttribute="leading" secondItem="qJl-OJ-VZo" secondAttribute="leading" constant="10" id="0bV-r8-WNy"/>
+                            <constraint firstItem="bnM-6M-VTz" firstAttribute="top" secondItem="qJl-OJ-VZo" secondAttribute="top" constant="14" id="0ry-2f-OL0"/>
+                            <constraint firstItem="ifl-lR-9og" firstAttribute="leading" secondItem="qJl-OJ-VZo" secondAttribute="leading" id="4VN-1d-xKR"/>
+                            <constraint firstItem="9dX-lJ-I7d" firstAttribute="centerY" secondItem="qJl-OJ-VZo" secondAttribute="centerY" id="Dhf-lX-mBZ"/>
+                            <constraint firstAttribute="trailing" secondItem="ifl-lR-9og" secondAttribute="trailing" id="Esb-NH-Tw9"/>
+                            <constraint firstItem="9dX-lJ-I7d" firstAttribute="leading" secondItem="qJl-OJ-VZo" secondAttribute="leading" constant="10" id="F20-Zv-kE6"/>
+                            <constraint firstItem="LFR-1g-key" firstAttribute="leading" secondItem="qJl-OJ-VZo" secondAttribute="leading" id="Twk-gx-kyw"/>
+                            <constraint firstAttribute="bottom" secondItem="ifl-lR-9og" secondAttribute="bottom" id="VlL-79-x5t"/>
+                            <constraint firstItem="LFR-1g-key" firstAttribute="top" secondItem="qJl-OJ-VZo" secondAttribute="top" id="aLP-Bm-Maf"/>
+                            <constraint firstItem="ifl-lR-9og" firstAttribute="top" secondItem="qJl-OJ-VZo" secondAttribute="top" id="bFd-P9-7iT"/>
+                            <constraint firstAttribute="bottom" secondItem="LFR-1g-key" secondAttribute="bottom" id="cnQ-8M-VfC"/>
+                            <constraint firstItem="DkZ-eM-Fuj" firstAttribute="centerY" secondItem="qJl-OJ-VZo" secondAttribute="centerY" id="dMf-xH-XhM"/>
+                            <constraint firstItem="ifl-lR-9og" firstAttribute="leading" secondItem="qJl-OJ-VZo" secondAttribute="leading" id="ehs-vJ-hYV"/>
+                            <constraint firstAttribute="height" constant="104" id="g3i-di-rNx"/>
+                            <constraint firstAttribute="trailing" secondItem="DkZ-eM-Fuj" secondAttribute="trailing" constant="10" id="iwJ-0C-M2j"/>
+                            <constraint firstAttribute="bottom" secondItem="ifl-lR-9og" secondAttribute="bottom" id="mLO-nM-FLK"/>
+                            <constraint firstItem="ifl-lR-9og" firstAttribute="top" secondItem="qJl-OJ-VZo" secondAttribute="top" id="n47-of-s8C"/>
+                            <constraint firstAttribute="trailing" secondItem="ifl-lR-9og" secondAttribute="trailing" id="s2v-le-9iP"/>
+                            <constraint firstAttribute="trailing" secondItem="LFR-1g-key" secondAttribute="trailing" id="xH8-SH-ySm"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="qJl-OJ-VZo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="Fu8-5I-dcZ"/>
+                    <constraint firstItem="qJl-OJ-VZo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="M9z-CJ-n7d"/>
+                    <constraint firstAttribute="trailing" secondItem="qJl-OJ-VZo" secondAttribute="trailing" constant="8" id="qJq-Yv-qDw"/>
+                    <constraint firstAttribute="bottom" secondItem="qJl-OJ-VZo" secondAttribute="bottom" constant="4" id="sXv-9t-ijS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+            <connections>
+                <outlet property="TraningNameLabel" destination="bnM-6M-VTz" id="scZ-f2-Gjd"/>
+                <outlet property="backImageView" destination="ifl-lR-9og" id="OFY-Bq-5hR"/>
+                <outlet property="exercicesCountLabel" destination="9dX-lJ-I7d" id="fZY-e8-lMT"/>
+                <outlet property="traningNameLabel" destination="bnM-6M-VTz" id="Xlg-Q3-Dta"/>
+            </connections>
+            <point key="canvasLocation" x="35" y="85"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

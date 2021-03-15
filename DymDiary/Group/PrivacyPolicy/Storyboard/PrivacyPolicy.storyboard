@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dp3-p3-k4t">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFCompactRounded-Medium.otf">
+            <string>SFCompactRounded-Medium</string>
+        </array>
+        <array key="SFCompactRounded-Regular.otf">
+            <string>SFCompactRounded-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Privacy Policy View Controller-->
+        <scene sceneID="b2o-zS-LEx">
+            <objects>
+                <viewController id="Dp3-p3-k4t" customClass="PrivacyPolicyViewController" customModule="DymDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hvk-qF-S8P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjV-tR-rph">
+                                <rect key="frame" x="117" y="59" width="180.5" height="36"/>
+                                <fontDescription key="fontDescription" name="SFCompactRounded-Medium" family="SF Compact Rounded" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Fw-bt-FYo">
+                                <rect key="frame" x="20" y="66" width="51.5" height="22"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="back" image="chevron.backward" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickBackButton:" destination="Dp3-p3-k4t" eventType="touchUpInside" id="gKL-GC-6Mw"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Jc-1l-2St">
+                                <rect key="frame" x="0.0" y="105" width="414" height="757"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bvR-ik-ORL">
+                                        <rect key="frame" x="0.0" y="-5" width="414" height="767"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vK-uV-55T">
+                                        <rect key="frame" x="15" y="15" width="384" height="24"/>
+                                        <fontDescription key="fontDescription" name="SFCompactRounded-Regular" family="SF Compact Rounded" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="5vK-uV-55T" secondAttribute="trailing" constant="15" id="1dc-MP-wmS"/>
+                                    <constraint firstAttribute="bottom" secondItem="5vK-uV-55T" secondAttribute="bottom" constant="723" id="OCx-pc-AfE"/>
+                                    <constraint firstAttribute="bottom" secondItem="bvR-ik-ORL" secondAttribute="bottom" id="Y8c-4s-vHF"/>
+                                    <constraint firstItem="bvR-ik-ORL" firstAttribute="centerX" secondItem="4Jc-1l-2St" secondAttribute="centerX" id="fTF-Fm-aeg"/>
+                                    <constraint firstItem="5vK-uV-55T" firstAttribute="leading" secondItem="4Jc-1l-2St" secondAttribute="leading" constant="15" id="j2Z-Vf-twd"/>
+                                    <constraint firstItem="bvR-ik-ORL" firstAttribute="leading" secondItem="4Jc-1l-2St" secondAttribute="leading" id="jFa-2g-Y3f"/>
+                                    <constraint firstItem="5vK-uV-55T" firstAttribute="top" secondItem="4Jc-1l-2St" secondAttribute="top" constant="15" id="pZX-ZS-9jV"/>
+                                    <constraint firstItem="bvR-ik-ORL" firstAttribute="centerY" secondItem="4Jc-1l-2St" secondAttribute="centerY" id="sPG-Bw-ySH"/>
+                                    <constraint firstAttribute="trailing" secondItem="bvR-ik-ORL" secondAttribute="trailing" id="tr0-N2-ZYW"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9ZF-mA-ie6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JjV-tR-rph" firstAttribute="centerX" secondItem="hvk-qF-S8P" secondAttribute="centerX" id="2m3-O6-IEf"/>
+                            <constraint firstItem="4Fw-bt-FYo" firstAttribute="top" secondItem="9ZF-mA-ie6" secondAttribute="top" constant="22" id="4mi-dI-Iu6"/>
+                            <constraint firstItem="4Jc-1l-2St" firstAttribute="leading" secondItem="9ZF-mA-ie6" secondAttribute="leading" id="Gyc-4a-TFf"/>
+                            <constraint firstItem="9ZF-mA-ie6" firstAttribute="bottom" secondItem="4Jc-1l-2St" secondAttribute="bottom" id="T9U-U4-tCv"/>
+                            <constraint firstItem="4Jc-1l-2St" firstAttribute="top" secondItem="JjV-tR-rph" secondAttribute="bottom" constant="10" id="YVI-TS-Dml"/>
+                            <constraint firstItem="4Fw-bt-FYo" firstAttribute="leading" secondItem="9ZF-mA-ie6" secondAttribute="leading" constant="20" id="Yhk-5i-V82"/>
+                            <constraint firstItem="JjV-tR-rph" firstAttribute="top" secondItem="9ZF-mA-ie6" secondAttribute="top" constant="15" id="e3Y-7w-Okf"/>
+                            <constraint firstItem="9ZF-mA-ie6" firstAttribute="trailing" secondItem="4Jc-1l-2St" secondAttribute="trailing" id="j8I-bK-5Av"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="privacyPolicyLabel" destination="5vK-uV-55T" id="sXj-75-ZhM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mP5-dc-0aJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-368.11594202898556" y="166.74107142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

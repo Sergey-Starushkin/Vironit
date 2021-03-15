@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XCA-ms-loR">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFCompactRounded-Medium.otf">
+            <string>SFCompactRounded-Medium</string>
+        </array>
+        <array key="SFCompactRounded-Regular.otf">
+            <string>SFCompactRounded-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Gender View Controller-->
+        <scene sceneID="Moa-h4-MVe">
+            <objects>
+                <viewController id="XCA-ms-loR" customClass="GenderViewController" customModule="DymDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kL5-J6-D6j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male or Female?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Al-XA-46l">
+                                <rect key="frame" x="47" y="44" width="281" height="48"/>
+                                <fontDescription key="fontDescription" name="SFCompactRounded-Medium" family="SF Compact Rounded" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0Q-sk-JHg">
+                                <rect key="frame" x="107" y="100" width="161" height="24"/>
+                                <fontDescription key="fontDescription" name="SFCompactRounded-Regular" family="SF Compact Rounded" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSN-U2-G9p">
+                                <rect key="frame" x="30" y="708" width="315" height="50"/>
+                                <color key="backgroundColor" red="0.89238047600000003" green="0.26256740090000003" blue="0.4862833023" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="W9a-zF-OMA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFCompactRounded-Regular" family="SF Compact Rounded" pointSize="25"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButton:" destination="XCA-ms-loR" eventType="touchUpInside" id="Hw9-mG-s0M"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="J81-6M-JkP">
+                                <rect key="frame" x="52.666666666666657" y="178" width="270" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RW7-WU-biP">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="dpt-yx-pJ4"/>
+                                            <constraint firstAttribute="height" constant="80" id="dro-w5-L4h"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                        <state key="normal" image="male"/>
+                                        <connections>
+                                            <action selector="genderButton:" destination="XCA-ms-loR" eventType="touchUpInside" id="0jy-Qa-cqQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeE-QP-Gib">
+                                        <rect key="frame" x="95" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                        <state key="normal" image="female"/>
+                                        <connections>
+                                            <action selector="genderButton:" destination="XCA-ms-loR" eventType="touchUpInside" id="IMV-gI-Srk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLC-wL-ybL">
+                                        <rect key="frame" x="190" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.96862745098039216" green="0.1764705882352941" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                        <state key="normal" image="transgender"/>
+                                        <connections>
+                                            <action selector="genderButton:" destination="XCA-ms-loR" eventType="touchUpInside" id="pUa-W6-LWh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="WeE-QP-Gib" firstAttribute="height" secondItem="RW7-WU-biP" secondAttribute="height" id="5lA-wp-eYu"/>
+                                    <constraint firstItem="WeE-QP-Gib" firstAttribute="width" secondItem="RW7-WU-biP" secondAttribute="width" id="Bzm-4I-gct"/>
+                                    <constraint firstItem="PLC-wL-ybL" firstAttribute="height" secondItem="RW7-WU-biP" secondAttribute="height" id="Z0D-bo-IU2"/>
+                                    <constraint firstItem="PLC-wL-ybL" firstAttribute="width" secondItem="RW7-WU-biP" secondAttribute="width" id="fMD-EG-Pwf"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mcN-H1-JVs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="q0Q-sk-JHg" firstAttribute="centerX" secondItem="kL5-J6-D6j" secondAttribute="centerX" id="OCN-5B-vJg"/>
+                            <constraint firstItem="J81-6M-JkP" firstAttribute="top" secondItem="q0Q-sk-JHg" secondAttribute="bottom" constant="54" id="OaH-x7-6Os"/>
+                            <constraint firstItem="wSN-U2-G9p" firstAttribute="leading" secondItem="mcN-H1-JVs" secondAttribute="leading" constant="30" id="Tbz-Gn-6eu"/>
+                            <constraint firstItem="q0Q-sk-JHg" firstAttribute="top" secondItem="5Al-XA-46l" secondAttribute="bottom" constant="8" symbolic="YES" id="i9s-Jb-eXK"/>
+                            <constraint firstItem="mcN-H1-JVs" firstAttribute="trailing" secondItem="wSN-U2-G9p" secondAttribute="trailing" constant="30" id="p9A-WO-7HZ"/>
+                            <constraint firstItem="J81-6M-JkP" firstAttribute="centerX" secondItem="kL5-J6-D6j" secondAttribute="centerX" id="tqG-mb-Scu"/>
+                            <constraint firstItem="5Al-XA-46l" firstAttribute="centerX" secondItem="kL5-J6-D6j" secondAttribute="centerX" id="z9Y-am-dsj"/>
+                            <constraint firstItem="5Al-XA-46l" firstAttribute="top" secondItem="mcN-H1-JVs" secondAttribute="top" id="zIl-1w-gZu"/>
+                            <constraint firstItem="mcN-H1-JVs" firstAttribute="bottom" secondItem="wSN-U2-G9p" secondAttribute="bottom" constant="20" id="zsh-ZB-eXA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="continueButton" destination="wSN-U2-G9p" id="Mxd-7g-CtW"/>
+                        <outletCollection property="genderButoonCollection" destination="RW7-WU-biP" collectionClass="NSMutableArray" id="aJm-i6-9TD"/>
+                        <outletCollection property="genderButoonCollection" destination="WeE-QP-Gib" collectionClass="NSMutableArray" id="Ges-ms-Z3d"/>
+                        <outletCollection property="genderButoonCollection" destination="PLC-wL-ybL" collectionClass="NSMutableArray" id="lCu-a7-l4q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tJL-uF-M9l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.40000000000001" y="93.103448275862078"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="female" width="512" height="512"/>
+        <image name="male" width="512" height="512"/>
+        <image name="transgender" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2RG-vS-Dez">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFCompactRounded-Medium.otf">
+            <string>SFCompactRounded-Medium</string>
+        </array>
+        <array key="SFCompactRounded-Regular.otf">
+            <string>SFCompactRounded-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Age View Controller-->
+        <scene sceneID="KLk-Pa-N6f">
+            <objects>
+                <viewController id="2RG-vS-Dez" customClass="AgeViewController" customModule="DymDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IhC-HR-61Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your date of birth?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mob-05-fCj">
+                                <rect key="frame" x="27.666666666666657" y="44" width="320" height="48"/>
+                                <fontDescription key="fontDescription" name="SFCompactRounded-Medium" family="SF Compact Rounded" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your date of birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fme-RX-g2i">
+                                <rect key="frame" x="85" y="100" width="205" height="24"/>
+                                <fontDescription key="fontDescription" name="SFCompactRounded-Regular" family="SF Compact Rounded" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFb-W0-n5b">
+                                <rect key="frame" x="30" y="708" width="315" height="50"/>
+                                <color key="backgroundColor" red="0.89238047600000003" green="0.26256740090000003" blue="0.4862833023" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Bgx-r9-tc7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFCompactRounded-Medium" family="SF Compact Rounded" pointSize="25"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Continue"/>
+                                <connections>
+                                    <action selector="clickContinueButton:" destination="2RG-vS-Dez" eventType="touchUpInside" id="ZPr-a2-3VT"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="wig-a9-NcG">
+                                <rect key="frame" x="27.666666666666657" y="185" width="320" height="216"/>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                    <!--1970-01-01 11:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                                    <!--2037-12-31 11:00:00 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="choiceDate:" destination="2RG-vS-Dez" eventType="valueChanged" id="AnE-81-32D"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sY6-Er-qdZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fme-RX-g2i" firstAttribute="centerX" secondItem="IhC-HR-61Z" secondAttribute="centerX" id="1mq-Qg-Sjp"/>
+                            <constraint firstItem="mob-05-fCj" firstAttribute="top" secondItem="sY6-Er-qdZ" secondAttribute="top" id="6vp-tC-rSU"/>
+                            <constraint firstItem="wig-a9-NcG" firstAttribute="top" secondItem="Fme-RX-g2i" secondAttribute="bottom" constant="61" id="AXF-DS-gFE"/>
+                            <constraint firstItem="mob-05-fCj" firstAttribute="centerX" secondItem="IhC-HR-61Z" secondAttribute="centerX" id="Jg6-8t-UA5"/>
+                            <constraint firstItem="wig-a9-NcG" firstAttribute="centerX" secondItem="IhC-HR-61Z" secondAttribute="centerX" id="dMO-fY-Q3C"/>
+                            <constraint firstItem="LFb-W0-n5b" firstAttribute="bottom" secondItem="sY6-Er-qdZ" secondAttribute="bottom" constant="-20" id="fDs-Ug-kuj"/>
+                            <constraint firstItem="Fme-RX-g2i" firstAttribute="top" secondItem="mob-05-fCj" secondAttribute="bottom" constant="8" symbolic="YES" id="jub-fw-PlZ"/>
+                            <constraint firstItem="sY6-Er-qdZ" firstAttribute="trailing" secondItem="LFb-W0-n5b" secondAttribute="trailing" constant="30" id="mib-97-yr5"/>
+                            <constraint firstItem="LFb-W0-n5b" firstAttribute="leading" secondItem="sY6-Er-qdZ" secondAttribute="leading" constant="30" id="n48-Ig-aD2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="continueButton" destination="LFb-W0-n5b" id="Dok-Zh-0Zw"/>
+                        <outlet property="pikerView" destination="wig-a9-NcG" id="RTR-sb-IdB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Za0-rI-lm0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82.400000000000006" y="126.35467980295567"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
