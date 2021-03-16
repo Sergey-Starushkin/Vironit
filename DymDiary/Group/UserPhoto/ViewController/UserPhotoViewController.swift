@@ -52,7 +52,7 @@ extension UserPhotoViewController{
                 }
             }
         } else {
-            warning(title: "", message: "", completion: nil)
+            warning(title: "Missing photo", message: "To continue, you need to upload a photo.", completion: nil)
         }
         
     }
